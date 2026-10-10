@@ -13,6 +13,7 @@ import com.example.saturnus_narum.databinding.ActivityThirdBinding
 import com.example.saturnus_narum.pertemuan3.ThirdResultActivity
 import com.example.saturnus_narum.pertemuan4.FourthActivity
 import com.example.saturnus_narum.pertemuan5.FifthActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -41,6 +42,29 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
 
+        val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
 
+        // Tampilkan username yang disimpan saat login
+        val username = sharedPref.getString("username", "")
+        binding.textHalo.text = "Halo, $username"
+
+        binding.btnLogout.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Logout")
+                .setMessage("Apakah anda yakin ingin logout?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    // Hapus data login
+                    val editor = sharedPref.edit()
+                    editor.clear()
+                    editor.apply()
+
+                    dialog.dismiss()
+                    finish()
+                }
+                .setNegativeButton("Tidak") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .show()
+        }
     }
 }
