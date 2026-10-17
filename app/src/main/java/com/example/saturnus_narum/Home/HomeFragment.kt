@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.saturnus_narum.Home.pertemuan4.FourthActivity
 import com.example.saturnus_narum.Home.pertemuan5.FifthActivity
 import com.example.saturnus_narum.Home.pertemuan7.SeventhActivity
 import com.example.saturnus_narum.R
@@ -33,7 +34,7 @@ class HomeFragment : Fragment() {
             title = "Home"
         }
         binding.btnToFourth.setOnClickListener {
-            val i = Intent(requireContext(), FifthActivity::class.java)
+            val i = Intent(requireContext(), FourthActivity::class.java)
             i.putExtra("name", "Politeknik Caltex Riau")
             i.putExtra("from", "Rumbai")
             i.putExtra("age", 25)

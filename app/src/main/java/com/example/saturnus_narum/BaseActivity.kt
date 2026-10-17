@@ -11,7 +11,6 @@ import com.example.saturnus_narum.Home.HomeFragment
 import com.example.saturnus_narum.Message.MessageFragment
 import com.example.saturnus_narum.More.MoreFragment
 import com.example.saturnus_narum.databinding.ActivityBaseBinding
-import com.example.saturnus_narum.databinding.ActivityFifthBinding
 
 class BaseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBaseBinding

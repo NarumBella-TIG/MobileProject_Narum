@@ -31,10 +31,6 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

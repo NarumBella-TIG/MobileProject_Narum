@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.saturnus_narum.MainActivity
+import com.example.saturnus_narum.BaseActivity
 import com.example.saturnus_narum.R
 import com.example.saturnus_narum.databinding.ActivityFourthBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -35,11 +35,11 @@ class FourthActivity : AppCompatActivity() {
         val age = intent.getIntExtra("age",0)
         Log.e("Data Intent","Nama: $name , Usia: $age, Asal: $from")
         binding.btnKembali.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, BaseActivity::class.java)
             startActivity(intent)
 
             Toast.makeText(
-                this, "Kembali ke Main", Toast.LENGTH_SHORT
+                this, "Kembali ke Home", Toast.LENGTH_SHORT
             ).show()
         }
 
