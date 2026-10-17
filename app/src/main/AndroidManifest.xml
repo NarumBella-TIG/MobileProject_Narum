@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Saturnus_Narum">
         <activity
-            android:name=".pertemuan4.FourthActivity"
+            android:name=".Home.pertemuan4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -33,19 +35,31 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan2.SecondActivity"
+            android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan3.ThirdResultActivity"
+            android:name=".Home.pertemuan3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan5.FifthActivity"
+            android:name=".Home.pertemuan5.FifthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan5.WebViewActivity"
+            android:name=".Home.pertemuan5.WebViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan7.SeventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+<!--        <activity-->
+<!--            android:name=".pertemuan7.BaseActivity"-->
+<!--            android:exported="false"-->
+<!--            android:windowSoftInputMode="adjustResize" />-->
+        <activity
+            android:name=".BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

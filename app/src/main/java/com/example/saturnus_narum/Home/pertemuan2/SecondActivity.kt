@@ -1,4 +1,4 @@
-package com.example.saturnus_narum.pertemuan2
+package com.example.saturnus_narum.Home.pertemuan2
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

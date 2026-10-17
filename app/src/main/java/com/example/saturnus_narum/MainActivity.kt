@@ -2,17 +2,14 @@ package com.example.saturnus_narum
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_narum.databinding.ActivityMainBinding
-import com.example.saturnus_narum.databinding.ActivityThirdBinding
-import com.example.saturnus_narum.pertemuan3.ThirdResultActivity
-import com.example.saturnus_narum.pertemuan4.FourthActivity
-import com.example.saturnus_narum.pertemuan5.FifthActivity
+import com.example.saturnus_narum.Home.pertemuan5.FifthActivity
+import com.example.saturnus_narum.Home.pertemuan7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -31,15 +28,24 @@ class MainActivity : AppCompatActivity() {
         }
 
 //      val btnToFourth: Button = findViewById(R.id.btnToFourth)
-
-        binding.btnToFifth.setOnClickListener {
-            val intent = Intent(this, FifthActivity::class.java)
+        binding.btnToFourth.setOnClickListener {
+            val i = Intent(this, FifthActivity::class.java)
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
-            startActivity(intent)
+            startActivity(i)
             Toast.makeText(this, "Pesan Berhasil Dikirim", Toast.LENGTH_SHORT)
                 .show()
+        }
+
+        binding.btnToFifth.setOnClickListener {
+            val i = Intent(this, FifthActivity::class.java)
+            startActivity(i)
+        }
+
+        binding.btnToSeventh.setOnClickListener {
+            val i = Intent(this, SeventhActivity::class.java)
+            startActivity(i)
         }
 
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)

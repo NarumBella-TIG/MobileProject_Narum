@@ -1,10 +1,8 @@
-package com.example.saturnus_narum.pertemuan4
+package com.example.saturnus_narum.Home.pertemuan4
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,8 +11,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_narum.MainActivity
 import com.example.saturnus_narum.R
 import com.example.saturnus_narum.databinding.ActivityFourthBinding
-import com.example.saturnus_narum.databinding.ActivityMainBinding
-import com.example.saturnus_narum.pertemuan3.ThirdResultActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
